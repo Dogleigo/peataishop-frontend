@@ -1,0 +1,21 @@
+{
+  "name": "petaishop",
+  "version": "1.0.0",
+  "description": "Site de Petshop com um design minimalista, em desenvolvimento intuito de vender produtos e serviços de forma online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dogleigo/peataishop-frontend.git"
+  },
+  "keywords": [
+    "petshop",
+    "venda",
+    "online",
+    "ração"
+  ],
+  "author": "Kaique Junior",
+  "license": "MIT"
+}
