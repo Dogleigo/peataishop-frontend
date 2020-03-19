@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color:#363636;
+    background-color:#3F3F3F;
 }
 
 .container{
@@ -25,23 +25,26 @@ body{
 }
 
 .menulateral{
+    position:relative;
     width:370px;
     height:100%;
     position:fixed;
     border-radius:50px;
     background-color:blueviolet;
     left:-300px; 
+    z-index:1;
 }
 .menulateral:hover{
     transition:1s;
-    left:-50px;
+    transform: translateX(250px);
 }
+
 .menulateral .logo img{
     align-items:center;
     left:50px;
     position:relative;
     width:260px;
-    height:230px;
+    height:210px;
 }
 
 .menulateral ul li{
@@ -65,8 +68,74 @@ body{
 .menulateral ul li a:hover{
     color:#fbe000;
     border-bottom: 5px solid gold;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.3s;
+}
+
+.conteudo{
+    display:flex;
+}
+
+.conteudo .banner{
+    position:relative;
+    margin: 50px 50px 20px 40px;
+    width:400px;
+    height:180px;
+    background:gold;
+    border-radius:10px;
+}
+
+.banner:hover{
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+    transition:0.2s;
+}
+
+.textBanner{
+    width:300px;
+    height:100px;
+    margin:20px;
+    text-align:left;
+    color:#fff;
+    font-size:24px;
+}
+
+.textBanner p{
+    text-transform:uppercase;
+    font-size:25px;
+    font-weight:900;
+    font-family:monospace;
+    color:#5d3b28;
+}
+
+.textBanner p span{
+    margin-left:30px;
+    position:absolute;
+}
+
+.conteudoBanner{
+    top:50px;
+    position:relative;
+}
+
+#bt{
+    font-size:15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform:uppercase;
+    margin-top:-100px;
+    width:200px;
+    height:40px;
+    color:#fff;
+    border-style:none;
+    background:#10b1e9;
+    border-radius:50px;
+}
+
+.conteudoBanner img{
+    margin-top:-170px;
+    margin-left:200px;
+    width:200px;
+    height:230px;
 }
 
 /*Testando icones*/
