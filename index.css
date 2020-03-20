@@ -17,26 +17,16 @@ body{
 
 /*Menu Lateral*/
 
-.icones{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:50px 0;
-}
-
 .menulateral{
     position:relative;
     width:370px;
     height:100%;
     position:fixed;
-    border-radius:50px;
     background-color:blueviolet;
-    left:-300px; 
+    left:-300px;
+    border-radius:15px;
     z-index:1;
-}
-.menulateral:hover{
     transition:1s;
-    transform: translateX(250px);
 }
 
 .menulateral .logo img{
@@ -47,15 +37,32 @@ body{
     height:210px;
 }
 
+.menulateral ul img{
+    display:flex;
+    width:50px;
+    height:50px;
+    margin-left:310px;
+    transition:1s;
+    cursor:pointer;
+}
+
+.menulateral:hover{
+    transition:1s;
+    transform: translateX(250px);
+}
+
+.menulateral ul img:hover{
+    transform:translateY(-4px);
+}
+
 .menulateral ul li{
-    margin:15px;
+    margin:10px;
     list-style:none;
 }
 
 .menulateral ul li a{
     position:relative;
-    line-height:1.5;
-    top:100px;
+    top:50px;
     right:-50px;
     font-size:26px;
     color:#fff;
@@ -74,6 +81,8 @@ body{
 
 .conteudo{
     display:flex;
+    margin:0;
+    left:0;
 }
 
 .conteudo .banner{
@@ -85,6 +94,10 @@ body{
     border-radius:10px;
 }
 
+.banner{
+    display:flex;
+    transition:1s;
+}
 .banner:hover{
     box-shadow: 0 4px 12px 0 rgba(0,0,0,0.1);
     transform: translateY(-4px);
