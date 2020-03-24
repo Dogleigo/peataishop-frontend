@@ -230,6 +230,8 @@ body{
     color: #fff;  
  }
 
+/*Banner de exibição de produtos*/
+
  .bannerItens{
      display:flex;
      justify-content:center;
