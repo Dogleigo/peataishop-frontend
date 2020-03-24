@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Kaique Junior">
     <title>Peataí - Petshop </title>
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
@@ -23,7 +23,7 @@
                     <div class="textBanner">
                         <p>Produtos exclusivos<br><span>para gatos</span></p>
                         <div class="conteudoBanner">
-                            <button type="button" name="btngatos" id="bt">Clique aqui</button>
+                            <a href="#"><button type="button" name="btngatos" id="bt">Clique aqui</button></a>
                             <img src="img/gatop.png" alt="">
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                     <div class="textBanner">
                         <p>Produtos exclusivos<br><span>para cachorros</span></p>
                         <div class="conteudoBanner">
-                            <button type="button" name="btncachorro" id="bt">Clique aqui</button>
+                           <a href="#"><button type="button" name="btncachorro" id="bt">Clique aqui</button></a>
                             <img src="img/cachorro2.png" alt="">
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                     <div class="textBanner">
                         <p>Produtos exclusivos<br><span>para peixes</span></p>
                         <div class="conteudoBanner">
-                            <button type="button" name="btnpeixe" id="bt">Clique aqui</button>
+                            <a href="#"><button type="button" name="btnpeixe" id="bt">Clique aqui</button></a>
                             <img src="img/peixe.png" alt="">
                         </div>
                     </div>
@@ -49,13 +49,39 @@
         </div> 
         <div class="conteudo2">
             <div class="itens">
-                <input type="text" name="pesquisar" placeholder="Pesquisar">
+                <a href="#" class="procura" name="procurar">
+                    <input type="text" name="pesquisar" placeholder="Pesquisar">
+                    <img src="img/icones/search.png" alt="">
+                </a>
             </div>
                 <div class="bannerItens">
                     <div class="containerCard">
                         <div class="card">
                             <div class="produto">
-                                <img src="img/racao.png" alt="">
+                                <img src="img/rpeixe.png" alt="">
+                            </div>
+                                <div class="descProduto">
+                                    <h2>Ração Vitta</h2>
+                                    <div class="tamanho">
+                                        <h3>Kg:</h3>
+                                        <span>10</span>
+                                        <span>15</span>
+                                        <span>20</span>
+                                        <span>25</span>
+                                    </div>
+                                        <div class="valor">
+                                            <span>R$85,39</span>
+                                        </div>
+                                    <a href="">Comprar</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bannerItens">
+                    <div class="containerCard">
+                        <div class="card">
+                            <div class="produto">
+                                <img src="img/rcachorro.png" alt="">
                             </div>
                                 <div class="descProduto">
                                     <h2>Ração Magnus</h2>
@@ -77,4 +103,5 @@
         </div>
     </div>
 </body>
+<script src="https://kit.fontawesome.com/68c1d85d1d.js" crossorigin="anonymous"></script>
 </html>

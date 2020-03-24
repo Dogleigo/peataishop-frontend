@@ -25,7 +25,7 @@ body{
     background-color:blueviolet;
     left:-300px;
     border-radius:15px;
-    z-index:1;
+    z-index:10000;
     transition:1s ease-in-out;
 }
 
@@ -144,9 +144,14 @@ body{
     height:40px;
     color:#fff;
     outline:none;
-    background:#A020F0;
+    background:none;
     border: 2px solid #fff;
     border-radius:50px;
+}
+
+#bt:active{
+    transform: scale(0.95);
+    transition:0.5s;
 }
 
 .conteudoBanner img{
@@ -166,20 +171,48 @@ body{
 
 .itens{
     position:relative;
-    margin-left:552px;
-    margin-top:15px;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height:40px;
+    border-radius:10px;
+    background:blueviolet;
+    margin-left:509px;
+    margin-top:25px;
 }
 
 .itens input{
     width:300px;
     height:30px;
+    padding:5px;
     text-align:center;
-    background-color: blueviolet;
+    background:none;
     color:#fff;
     outline:none;
+    border-style:none;
     border-radius:5px;
-    border:2px solid #fff;
 }
+
+.procura{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    float:right;
+}
+
+.procura img{
+    margin: 2px;
+    width:30px;
+    height:30px;
+    float:right;
+    transition:0.5s;
+}
+
+.procura img:active{
+    transform: scale(0.95);
+    transition:0.5s;
+}
+
 
 .itens input::-webkit-input-placeholder {
     color: #fff;
@@ -202,17 +235,19 @@ body{
      justify-content:center;
      align-items:center;
      min-height:100vh;
+     margin:10px;
  }
 
  .containerCard{
     margin:0;
-    top:0;
+    top:-80px;
+    left:-800px;
     position:relative;
  }
 
  .containerCard .card{
     position:relative;
-    width:320px;
+    width:300px;
     height:400px;
     background:#303030;
     border-radius:15px;
@@ -240,7 +275,7 @@ body{
      position: absolute;
      align-content: center;
      align-items:center;
-     top:-120px;
+     top:-110px;
      left: 60px;
      width:200px;
      height:250px;
@@ -255,7 +290,7 @@ body{
     position:absolute;
     top:50%;
     transform:translateY(-520);
-    z-index:10000;
+    z-index:1;
  }
 
  .containerCard .card .descProduto{
@@ -273,7 +308,7 @@ body{
  }
 
  .containerCard .card:hover .descProduto{
-    height:210px;
+    height:200px;
  }
 
  .containerCard .card .descProduto h2{
@@ -281,7 +316,7 @@ body{
     font-weight:600;
     letter-spacing:1px;
     color:#fff;
-    top:20px;
+    top:30px;
  }
 
 .containerCard .card .descProduto .tamanho{
@@ -307,6 +342,7 @@ body{
     text-transform:uppercase;
     letter-spacing:2px;
     margin-right:10px;
+    margin-top:30px;
  }
 
  .containerCard .card .descProduto .tamanho span{
@@ -318,7 +354,8 @@ body{
      display:inline-block;
      color: #111;
      background: #ffff;
-     margin: 0 5px;
+     margin:0 5px;
+     margin-top:30px;
      transition:0.5s;
      border-radius: 4px;
      cursor: pointer;
@@ -343,7 +380,7 @@ body{
      transition: 0.5s;
  }
 
- .containerCard .card .descProduto .valor{
+ .containerCard .card .descProduto .valor span{
     color: #fff;
  }
 
